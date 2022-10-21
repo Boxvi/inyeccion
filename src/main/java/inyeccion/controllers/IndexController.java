@@ -2,6 +2,7 @@ package inyeccion.controllers;
 
 import inyeccion.models.service.IService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class IndexController {
 
     @Autowired
+    @Qualifier("miServicioComplejo")
     private IService iService;
 
     /*
@@ -27,10 +29,10 @@ public class IndexController {
     @Autowired
     public void setiService(IService iService) {
         this.iService = iService;
-    }*/
+    }
 
     @Autowired
     public IndexController(IService iService) {
         this.iService = iService;
-    }
+    }*/
 }
