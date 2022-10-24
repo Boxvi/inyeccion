@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class IndexController {
 
     @Autowired
-    @Qualifier("miServicioComplejo")
+    @Qualifier("miServicioSimple")
     private IService iService;
 
     /*

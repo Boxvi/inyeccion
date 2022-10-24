@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 import javax.persistence.PreUpdate;
 
 
-@Component("miServicioComplejo")
-@Primary
+//@Component("miServicioComplejo")
+//@Primary
 public class MiServicioComplejo implements IService {
 
     @Override
