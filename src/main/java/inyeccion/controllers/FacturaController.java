@@ -21,7 +21,6 @@ public class FacturaController {
     public String ver(Model model) {
         model.addAttribute("titulo", "Ejemplo de factura con inyección de dependencias");
         model.addAttribute("factura", factura);
-        System.out.println("su nombre es:" + factura.getCliente().getNombre());
         return "factura/ver";
     }
 }
